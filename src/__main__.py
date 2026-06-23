@@ -46,7 +46,6 @@ def main() -> None:
 
     args = parser.parse_args()
 
-    print("ouais c'est greg")
     raw_functions = load_json(args.functions_definition)
     functions = [FunctionDefinition(**f) for f in raw_functions]
 
