@@ -74,6 +74,12 @@ def main() -> None:
 
     try:
         for item in prompts:
+            if not item.prompt or not item.prompt.strip():
+                print(
+                    "Un prompt vide ou composé d'espaces a été trouvé. "
+                    "Le prompt a été skip, passage au suivant."
+                )
+                continue
             print(f"\nTraitement du prompt : '{item.prompt}'")
 
             raw_json_output = decoder.generate_function_call(item.prompt)

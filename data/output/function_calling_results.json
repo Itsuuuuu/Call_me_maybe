@@ -44,10 +44,10 @@
     }
   },
   {
-    "prompt": "What is the square root of 1?",
+    "prompt": "What is the square root of 16?",
     "name": "fn_get_square_root",
     "parameters": {
-      "a": 1
+      "a": 16
     }
   },
   {
